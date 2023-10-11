@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "ssynak.github.io",
+			"path": "."
+		},
+		{
+			"name": "clock-main",
+			"path": "../../../Desktop/2023 FALL/341/clock-main"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "clock-main"
+	}
+}
