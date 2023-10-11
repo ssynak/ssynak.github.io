@@ -5,9 +5,10 @@ body {
 }
 
 .cursor {
+    bqckground-image: url('http://placekitten.com/40/40');
   width: 20px;
   height: 20px;
-  border: 1px solid white;
+  border: 1px dotted white;
   border-radius: 50%;
   position: absolute;
   transition-duration: 200ms;
