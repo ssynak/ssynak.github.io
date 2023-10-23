@@ -1,104 +1,175 @@
-* {box-sizing: border-box;}
-html {
-  scroll-behavior: smooth;
+* {
+  box-sizing:border-box;
 }
 body {
   margin:0;
-  background-color:rgb(245, 210, 34);
 }
-
-body.subpage01 {
-  background-color:rgb(183, 221, 185);
-}
-
-img {
-  width:100%;
-}
-
-a { text-decoration:none;}
-a:hover {
-  color:cornflowerblue;
-}
-
 main {
-  width: 100vw;
-}
-
-body.subpage01 header {
-  background-color:rgb(240, 175, 90);
-}
-
-header {
-  background-color:rgb(245, 210, 34);
-  display:flex;
   width:100vw;
-  align-items:baseline;
-  padding: 10px 20px 0 20px;
+  height:100vh;
+  background-color:rgb(240, 220, 38);
+  display:flex;
+  align-items:center;
 }
-.logo {
-  flex:25%;
+h1 {
+  font-size:120px;
+  font-family: HUMANISM;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  color: #FDE408;
+  position:relative;
+  z-index:1;
 }
-.logo-img {
-  width:80px;
+.frame {
+  background-image: url('images/pika-collared.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 90vw;
+  margin:auto;
+  height:90vh;
+  border-radius: 20px;
+  border:1px solid black;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+.pika-img {
+  width:40%;
+  z-index: 3;
+  position:absolute;
+  bottom: 160px;
+  left: 20%;
+}
+.pika-wiggle {
+  animation-name: wiggle;
+  animation-duration:2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 4;
+  animation-direction: alternate;
+  transform:rotate(0deg);
+}
+
+@keyframes wiggle {
+  0% {
+    transform:rotate(0deg);
+  }
+  50% {
+    transform:rotate(-15deg);
+  }
+  100% {transform:rotate(15deg);}
+}
+.rock-img {
+  position: absolute;
+  bottom:-160px;
+  left:20%;
+  right:0;
+  width:70%;
+  z-index:3;
+}
+
+/* START OF NAV CODE */
+.nav {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 60px;
+  width: 100%;
+  z-index: 900;
+}
+
+.icon {
+  position: fixed;
+  cursor: pointer;
+  top: 60px;
+  right: -28px;
+  width: 40px;
+  height: 45px;
+  transform: translate(-50%, -50%);
+  display: block;
+  z-index: 1000;
+  padding: 26px;
   border-radius: 50%;
 }
-nav {
-  flex:75%;
+
+.hamburger {
+  width: 40px;
+  height: 4px;
+  line-height: 70px;
+  background-color:rgb(240, 220, 38);
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+  transition: 0.5s;
 }
 
-nav ul { 
-  list-style:none;
-  display:flex;
-  justify-content: flex-end;
-  align-items:end;
-  margin:0;
+.hamburger:before,
+.hamburger:after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background-color:rgb(240, 220, 38);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
 }
-nav li {
-  padding:10px 0;
 
-  
+.hamburger:before {
+  top: -10px;
 }
-nav li a {
-  background-color:rgb(245, 210, 34);
-  padding:10px 30px;
+
+.hamburger:after {
+  top: 10px;
+}
+
+.icon.active .hamburger {
+  background: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+}
+
+.icon.active .hamburger:before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.icon.active .hamburger:after {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.menu-mobile {
+  background-color:none;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding-top: 150px;
+  font-family: 'Helvetica', sans-serif;
+  text-align: center;
+}
+
+.menu-mobile,
+.menu-mobile a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.menu-mobile a {
+  clear: right;
+  text-decoration: none;
   color: #333;
+  height: 70px;
+  line-height: 70px;
 }
-nav li a:hover {
-  color:rgb(116, 81, 116);
-}
-
-.tall-image {
-  height:300px;
-  width:auto;
+.menu-mobile a:hover {
+  color: red;
 }
 
-
-*/.border {
-  border: 1px solid black;
+.menu-mobile {
+  display: none;
 }
-
-.flexbox {
-  display:flex;
-  width:90%;
-  margin:auto;
-  margin-top:60px;
-}
-.flexbox div {
-  flex:1;
-}
-
-footer a {
-  color: #f5a1a1;
-}
-
-body.subpage01 footer a {
-  color: #fff;
-}
-footer {
-  background-color:#333;
-  padding:30px 60px;
-  /* position:fixed;
-  bottom:0;
-  left:0;
-  right:0; */
-}
+/* END OF NAV CODE */
