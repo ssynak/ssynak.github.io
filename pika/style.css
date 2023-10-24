@@ -35,7 +35,7 @@ h1 {
   overflow:hidden;
 }
 .pika-img {
-  width:40%;
+  width:100%;
   z-index: 3;
   position:absolute;
   bottom: 160px;

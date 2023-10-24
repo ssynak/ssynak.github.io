@@ -25,14 +25,13 @@
       </nav>
     <h1>PIKA</h1>
     <img class="pika-img" src="images/pika-collared-ko.png">
-    
     <img class="rock-img" src="images/pika-collard-rock.png">
   </section>
   </main>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script>
-    $( document ).ready(function() {
+    $( document ).ready(function(hover) {
       $('.pika-img').addClass('pika-wiggle')
       setTimeout(() => {
         $('.pika-img').removeClass('pika-wiggle')
