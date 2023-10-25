@@ -4,6 +4,7 @@
 body {
   margin:0;
 }
+
 main {
   width:100vw;
   height:100vh;
@@ -13,14 +14,14 @@ main {
 }
 
 h1 {
-  font-size:120px;
+  position: relative;
+  left: 150px;
+  font: size 60px;
   font-family: HUMANISM;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 700;
   line-height: normal;
   color: #FDE408;
-  position:relative;
-  z-index:1;
 }
 
 h2 {
@@ -46,6 +47,26 @@ h2 {
   overflow:hidden;
 }
 
+.container {
+  border-image: url(images/logo-horiz.png);
+  margin-top: 0px;
+  margin-left: 15%;
+  position: absolute;
+}
+
+
+.gallery {
+  background-image: url('images/gallery-0-open.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: 10% 0%;
+  height: 100%;
+  bottom: 35%;
+  text-align:center;
+  position:relative;
+}
+
 .pika-img {
   width: 100%;
   z-index: 3;
@@ -62,6 +83,8 @@ h2 {
 }
 
 .logo-img {
+  width: 100%;
+  margin-top: 0%;
   position: absolute;
 }
 
