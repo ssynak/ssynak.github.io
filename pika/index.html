@@ -13,34 +13,36 @@
     <section class="frame">
       <nav class="nav">
         <div class="icon">
-          <div class="hamburger"></div>
+          <div class="burger"></div>
         </div>
         <div class="menu-mobile">
-          <a href="#intro-section">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#contact">Contact</a>
+          <a href="#home">Home</a>
+          <a href="#habitat">Habitat</a>
+          <a href="#species">Species</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#pikachu">Pikachu</a>
         </div>
       </nav>
-    <h1>PIKA</h1>
-    <img class="pika-img" src="images/pika-collared-ko.png">
+    <h1></h1>
+    <h2></h2>
+    <img class="logo" src="images/logo.png">
+    <img class="pika-ko-img" src="images/pika-collared-ko.png">
     <img class="rock-img" src="images/pika-collard-rock.png">
   </section>
   </main>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script>
-    $( document ).ready(function(hover) {
-      $('.pika-img').addClass('pika-wiggle')
+    $( document ).ready(function(hover){
+      $('.pika-ko-img').addClass('pika-wiggle')
       setTimeout(() => {
-        $('.pika-img').removeClass('pika-wiggle')
+        $('.pika-ko-img').removeClass('pika-wiggle')
       }, "3000");
 
     })
 
-    $('.pika-img').hover(function(){
-      $('.pika-img').toggleClass('pika-wiggle')
+    $('.pika-ko-img').hover(function(){
+      $('.pika-ko-img').toggleClass('pika-wiggle')
     })
 
   </script>

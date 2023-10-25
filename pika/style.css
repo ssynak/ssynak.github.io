@@ -9,8 +9,9 @@ main {
   height:100vh;
   background-color:rgb(240, 220, 38);
   display:flex;
-  align-items:center;
+  align-items:right;
 }
+
 h1 {
   font-size:120px;
   font-family: HUMANISM;
@@ -21,26 +22,49 @@ h1 {
   position:relative;
   z-index:1;
 }
+
+h2 {
+  font-size:120px;
+  font-family: tilda;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #FDE408;
+  position:relative;
+}
+
 .frame {
   background-image: url('images/pika-collared.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  width: 90vw;
+  width: 100%;
   margin:auto;
-  height:90vh;
-  border-radius: 20px;
-  border:1px solid black;
+  height:100%;
+  bottom:60px;
   text-align:center;
   position:relative;
   overflow:hidden;
 }
+
 .pika-img {
-  width:100%;
+  width: 100%;
   z-index: 3;
   position:absolute;
   bottom: 160px;
   left: 20%;
 }
+
+.pika-ko-img {
+  width:100%;
+  position:absolute;
+  bottom: 160px;
+  left: 20%;
+}
+
+.logo-img {
+  position: absolute;
+}
+
 .pika-wiggle {
   animation-name: wiggle;
   animation-duration:2s;
@@ -59,6 +83,11 @@ h1 {
   }
   100% {transform:rotate(15deg);}
 }
+
+.pika-img {
+  position: absolute;
+}
+
 .rock-img {
   position: absolute;
   bottom:-160px;
@@ -82,7 +111,7 @@ h1 {
   position: fixed;
   cursor: pointer;
   top: 60px;
-  right: -28px;
+  left: 55px;
   width: 40px;
   height: 45px;
   transform: translate(-50%, -50%);
@@ -92,7 +121,7 @@ h1 {
   border-radius: 50%;
 }
 
-.hamburger {
+.burger {
   width: 40px;
   height: 4px;
   line-height: 70px;
@@ -106,8 +135,8 @@ h1 {
   transition: 0.5s;
 }
 
-.hamburger:before,
-.hamburger:after {
+.burger:before,
+.burger:after {
   content: '';
   position: absolute;
   width: 40px;
@@ -118,25 +147,25 @@ h1 {
   transition: 0.5s;
 }
 
-.hamburger:before {
+.burger:before {
   top: -10px;
 }
 
-.hamburger:after {
+.burger:after {
   top: 10px;
 }
 
-.icon.active .hamburger {
+.icon.active .burger {
   background: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
 }
 
-.icon.active .hamburger:before {
+.icon.active .burger:before {
   top: 0;
   transform: rotate(45deg);
 }
 
-.icon.active .hamburger:after {
+.icon.active .burger:after {
   top: 0;
   transform: rotate(135deg);
 }
@@ -148,8 +177,8 @@ h1 {
   width: 100%;
   z-index: 999;
   padding-top: 150px;
-  font-family: 'Helvetica', sans-serif;
-  text-align: center;
+  font-family: 'Humanism', sans-serif;
+  text-align: left;
 }
 
 .menu-mobile,
@@ -161,12 +190,12 @@ h1 {
 .menu-mobile a {
   clear: right;
   text-decoration: none;
-  color: #333;
+  color: rgb(240, 220, 38);
   height: 70px;
   line-height: 70px;
 }
 .menu-mobile a:hover {
-  color: red;
+  color: white;
 }
 
 .menu-mobile {
