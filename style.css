@@ -1,3 +1,53 @@
 h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: HUMANISM;
+    position: relative;
+    left: 150px;
+    font-family: HUMANISM;
+    font-style: bold;
+    font-size: x-large 300px;
+    font-weight: 900;
+    line-height: normal;
+    color: hsl(306, 98%, 51%);
+}
+
+h2 {
+    font-family: HUMANISM;
+    position: relative;
+    left: 150px;
+    font: size 40px;
+    font-family: HUMANISM;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: hsl(306, 98%, 51%);
+}
+
+body {
+    background-color: rgb(255, 230, 0);
+    font-family: HUMANISM;
+    position: relative;
+    left: 150px;
+    font: size 60px;
+    font-family: HUMANISM;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: hsl(306, 98%, 51%);
+}
+
+.container {
+    position: fixed;
+    bottom: 40px;
+}
+
+.container-1 {
+    position: fixed;
+    bottom: 40px;
+    right: 300px;
+}
+
+.links {
+    background-position-x:fixed;
+    margin: 0px 151px;
+    padding: 0px;
 }
