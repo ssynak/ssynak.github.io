@@ -75,50 +75,13 @@ h2 {
   left: 20%;
 }
 
-.pika-ko-img {
-  width:100%;
-  position:absolute;
-  bottom: 160px;
-  left: 20%;
-}
-
 .logo-img {
   width: 100%;
   margin-top: 0%;
   position: absolute;
 }
 
-.pika-wiggle {
-  animation-name: wiggle;
-  animation-duration:2s;
-  animation-timing-function: linear;
-  animation-iteration-count: 4;
-  animation-direction: alternate;
-  transform:rotate(0deg);
-}
 
-@keyframes wiggle {
-  0% {
-    transform:rotate(0deg);
-  }
-  50% {
-    transform:rotate(-15deg);
-  }
-  100% {transform:rotate(15deg);}
-}
-
-.pika-img {
-  position: absolute;
-}
-
-.rock-img {
-  position: absolute;
-  bottom:-160px;
-  left:20%;
-  right:0;
-  width:70%;
-  z-index:3;
-}
 
 /* START OF NAV CODE */
 .nav {
