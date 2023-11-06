@@ -35,12 +35,13 @@ h2 {
 }
 
 .frame {
-  background-image: url('images/pika-collared.jpg');
+  background-image: url('images/flower-power.JPG');
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   margin:auto;
   height:100%;
+  margin-top: 60px;
   bottom:60px;
   text-align:center;
   position:relative;
@@ -81,14 +82,12 @@ h2 {
   position: absolute;
 }
 
-
-
 /* START OF NAV CODE */
-.nav {
+.nav, .desktop {
   display: block;
-  position: absolute;
-  top: 20px;
-  left: 60px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
   width: 100%;
   z-index: 900;
 }
@@ -96,79 +95,76 @@ h2 {
 .icon {
   position: fixed;
   cursor: pointer;
-  top: 60px;
-  left: 55px;
+  top: 5%;
+  right: 0%;
   width: 40px;
   height: 45px;
   transform: translate(-50%, -50%);
   display: block;
   z-index: 1000;
-  padding: 26px;
-  border-radius: 50%;
 }
 
-.burger {
+.hamburger {
   width: 40px;
   height: 4px;
   line-height: 70px;
-  background-color:rgb(240, 220, 38);
+  background: #FDE408;
   border-radius: 5px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
-  transition: 0.5s;
+  transform: translate(-50%,-50%);
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+  transition: .5s;
 }
 
-.burger:before,
-.burger:after {
+.hamburger:before,
+.hamburger:after {
   content: '';
   position: absolute;
   width: 40px;
   height: 4px;
-  background-color:rgb(240, 220, 38);
+  background: #FDE408;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: 0.5s;
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+  transition: .5s;
 }
 
-.burger:before {
+.hamburger:before {
   top: -10px;
 }
 
-.burger:after {
+.hamburger:after {
   top: 10px;
 }
 
-.icon.active .burger {
-  background: none;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+.icon.active .hamburger {
+  background: rgba(0,0,0,0);
+  box-shadow: 0 2px 5px rgba(0,0,0,0);
 }
 
-.icon.active .burger:before {
+.icon.active .hamburger:before {
   top: 0;
   transform: rotate(45deg);
 }
 
-.icon.active .burger:after {
+.icon.active .hamburger:after {
   top: 0;
   transform: rotate(135deg);
 }
 
 .menu-mobile {
-  background-color:none;
+  background-color: #efefef;
   height: 100vh;
   position: fixed;
   width: 100%;
   z-index: 999;
   padding-top: 150px;
   font-family: 'Humanism', sans-serif;
-  text-align: left;
+  text-align: center;
 }
 
-.menu-mobile,
-.menu-mobile a {
+.menu-mobile, .menu-mobile a {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -176,15 +172,15 @@ h2 {
 .menu-mobile a {
   clear: right;
   text-decoration: none;
-  color: rgb(240, 220, 38);
+  color: #FDE408;
   height: 70px;
   line-height: 70px;
 }
 .menu-mobile a:hover {
-  color: white;
+  color: rgb(251, 249, 249);
 }
 
-.menu-mobile {
-  display: none;
-}
+.desktop, .menu-desktop, .menu-mobile {
+      display: none;
+  }
 /* END OF NAV CODE */
