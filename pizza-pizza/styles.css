@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.page {
+  width: 100vw;
+  height: 100vh;
+}
+.content {
+  width: 60%;
+  margin: 80px auto;
+  background-color:rgba(255,255,255,.6);
+  padding:80px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  position:relative;
+}
+.logo {
+  position:absolute;
+  top: 40px;
+  left:40px;
+  width:163px;
+}
+.one,
+.two,
+.three,
+.four {
+  background-image:url('images/checkerboard.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  position:relative;
+}
+.one {
+  /* background: rgb(251, 190, 190); */
+}
+.two {
+  /* background: rgb(185, 229, 241); */
+}
+.three {
+  /* background: rgb(198, 251, 190); */
+}
+.four {
+  /* background: rgb(246, 190, 251); */
+}
+
+.page-two-pic-one {
+  position:absolute;
+  left: -200px;
+  top: 10%;
+  width: 260;
+  transform:rotate(-15deg);
+}
+.page-two-pic-two {
+  position:absolute;
+  left: -60px;
+  top: 30%;
+  width: 300;
+  transform:rotate(10deg);
+}
+.page-two-pic-three {
+  position:absolute;
+  left: 0;
+  top: 60%;
+  width: 300;
+  transform:rotate(5deg);
+}
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.kitty {
+  width: 40%;
+  margin: auto;
+}
