@@ -128,23 +128,6 @@ h5{
   transform:rotate(0deg);
 }
 
-main {
-  margin-top:90px;
-  background-color:rgb(199, 219, 199);
-}
-.flex {
-  display:flex;
-  width:80%;
-  margin:auto;
-}
-.flex div {
-  flex:1;
-  
-}
-.flex .left {
-  padding-right:60px;
-}
-
 .page-three-pic-one {
   position:absolute;
   left: -200px;
@@ -183,8 +166,8 @@ main {
 }
 .page-four-pic-three {
   position:absolute;
-  left: 13%;
-  top: 75%;
+  left: -1%;
+  bottom: 2%;
   width: 300;
   transform:rotate(5deg);
 }
