@@ -68,6 +68,16 @@ h5{
 }
 .three {
   /* background: rgb(198, 251, 190); */
+  display: flex;
+}
+.three.content {
+  width:20%;
+}
+.three div {
+  flex:1;
+}
+.three .right-content {
+  margin-top:200px;
 }
 .four {
   /* background: rgb(246, 190, 251); */
@@ -162,7 +172,7 @@ main {
 .page-three-pic-three {
   position:absolute;
   left: 0;
-  top: 60%;
+  bottom: 60%;
   width: 300;
   transform:rotate(5deg);
 }
@@ -181,10 +191,14 @@ main {
   width: 300;
   transform:rotate(10deg);
 }
+.scroll {
+  height:40%;
+  overflow:scroll;
+}
 .page-four-pic-three {
   position:absolute;
-  left: 13%;
-  top: 75%;
+  left: -1%;
+  bottom: 2%;
   width: 300;
   transform:rotate(5deg);
 }
