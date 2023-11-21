@@ -33,6 +33,12 @@ h5{
   color: black;
 }
 
+.flexbox {
+  z-index: 100;
+  position: absolute;
+  width: 80;
+}
+
 .page {
   width: 100vw;
   height: 100vh;
@@ -44,6 +50,7 @@ h5{
   background-color:rgba(255,255,255,.6);
   padding:80px;
 }
+
 .wrapper {
   display: flex;
   flex-direction: row;
@@ -72,6 +79,7 @@ h5{
 .one {
   /* background: rgb(251, 190, 190); */
 }
+  
 .two {
   /* background: rgb(185, 229, 241); */
 }
@@ -100,16 +108,16 @@ h5{
 .page-one-pic-one {
   position:absolute;
   left: -200px;
-  top: 10%;
-  width: 260;
+  top: -40px;
+  width: 100px;
   transform:rotate(-15deg);
 }
 .page-one-pic-two {
   position:absolute;
-  left: -60px;
-  top: 30%;
-  width: 300;
-  transform:rotate(10deg);
+  left: -120px;
+  top: 5%;
+  width: 100;
+  transform:rotate(-10deg);
 }
 .page-one-pic-three {
   position:absolute;
