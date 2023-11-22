@@ -7,7 +7,6 @@ body {
 h1{
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
-  padding-top: 5;
   color: rgb(226, 3, 3);
 }
 
@@ -36,6 +35,15 @@ h5{
 .flexbox {
   z-index: 100;
   position: absolute;
+  left: 35%;
+  width: 80;
+}
+
+.main-header {
+  z-index: 100;
+  position: absolute;
+  left: 35%;
+  top: 10%;
   width: 80;
 }
 
