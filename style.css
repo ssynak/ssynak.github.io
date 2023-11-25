@@ -27,7 +27,7 @@ body {
     font-family: HUMANISM;
     position: relative;
     left: 150px;
-    font: size 60px;
+    font: size 30px;
     font-family: HUMANISM;
     font-style: normal;
     font-weight: 700;
@@ -37,17 +37,23 @@ body {
 
 .container {
     position: fixed;
-    bottom: 40px;
+    bottom:20px;
+    right: 80%;
 }
 
 .container-1 {
     position: fixed;
-    bottom: 40px;
-    right: 300px;
+    top:20px;
+    right: 80%;
 }
 
 .links {
     background-position-x:fixed;
+    margin: 0px 151px;
+    padding: 0px;
+}
+
+.sub-head {
     margin: 0px 151px;
     padding: 0px;
 }
