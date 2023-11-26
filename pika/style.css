@@ -3,12 +3,12 @@
 }
 body {
   margin:0;
+  background-color: #FDE408;
 }
 
 main {
   width:100vw;
   height:100vh;
-  background-color:rgb(240, 220, 38);
   display:flex;
   align-items:right;
 }
@@ -34,6 +34,29 @@ h2 {
   position:relative;
 }
 
+h3 {
+  font-size:40px;
+  font-family: tilda;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  color: #f9f9f7;
+  position:relative;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+h4 {
+  font-size: 10px;
+  font-family: HUMANISM;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #f9f9f7;
+  position:relative;
+  margin-top: 0px;
+}
+
 .frame {
   background-image: url('images/flower-power.JPG');
   background-size: cover;
@@ -48,14 +71,72 @@ h2 {
   overflow:hidden;
 }
 
-.container {
-  border-image: url(images/logo-horiz.png);
-  margin-top: 0px;
-  margin-left: 15%;
-  position: absolute;
+.page-01 {
+  background-image: url('images/national-geo.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin:auto;
+  height:100%;
+  margin-top: 115px;
+  bottom:60px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
 }
 
+.page-02 {
+  background-image: url('images/pika-collared.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin:auto;
+  height:100%;
+  margin-top: 115px;
+  bottom:60px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
 
+/*--
+.page-03 {
+  background-image: url('images/gallery-0-open.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 95%;
+  border-radius: 10px;
+  margin:auto;
+  height:95%;
+  margin-top: 95px;
+  bottom: 80px;
+  position:relative;
+}
+--*/
+
+.page-04 {
+  background-image: url('images/seated-american-pika.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin:auto;
+  height:100%;
+  margin-top: 115px;
+  bottom:60px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+
+.container {
+  border-image: url(images/logo-horiz.png);
+  margin-top: 50px;
+  margin-left: 5%;
+  position: absolute;
+  z-index: 900;
+}
+
+/*-- 
 .gallery {
   background-image: url('images/gallery-0-open.png');
   background-size: cover;
@@ -67,6 +148,45 @@ h2 {
   text-align:center;
   position:relative;
 }
+--*/
+
+/*-- START GALLERY --*/
+.slider {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.slide-content {
+	display: grid;
+	grid-template-columns:auto;
+}
+
+.slide-content .text-content {
+  margin-left: 20px;
+}
+
+.slide-content img {
+  width: 95%;
+  border-radius: 10px;
+}
+
+.slick-initialized .slick-slide {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.kitten-slide img {
+  width: 100%;}
+
+.kitten-slide img {
+  width: 100%;
+}
+
+.kitten-slide {
+  margin: 0 0;}
+/*-- END --*/
 
 .pika-img {
   width: 100%;
@@ -161,7 +281,9 @@ h2 {
   z-index: 999;
   padding-top: 150px;
   font-family: 'Humanism', sans-serif;
+  font-weight: 400;
   text-align: center;
+  text-shadow: 0 2px 5px rgba(0,0,0,.2);
 }
 
 .menu-mobile, .menu-mobile a {
