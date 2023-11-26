@@ -1,34 +1,4 @@
 
-/*--
-.slider {
-	width: 60%;
-	margin: 0 auto;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
-.slide-content {
-	display: grid;
-	grid-template-columns;
-}
-
-.slide-content .text-content {margin-left: 20px;}
-
-.slide-content img {width: 100%;}
-
-.slick-initialized .slick-slide {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-}
-
-
-
-.kitten-slide img {width: 100%;}
-
-.kitten-slide img {width: 100%;}
-.kitten-slide { margin: 0 0;}
- --*/
-
  .slider {
 	width: 90%;
 	margin: 0 auto;
@@ -42,7 +12,8 @@
 }
 
 .slide-content .text-content {
-  margin-left: 20px;
+  margin-left: 10px;
+  margin-right: 20px;
 }
 
 .slide-content img {
