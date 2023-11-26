@@ -115,11 +115,11 @@ h4 {
 --*/
 
 .page-04 {
-  background-image: url('images/seated-american-pika.jpg');
-  background-size: cover;
+  background-image: url('images/pika.jpg');
+  background-size: auto;
   background-repeat: no-repeat;
   width: 100%;
-  margin:auto;
+  margin-left:30px;
   height:100%;
   margin-top: 115px;
   bottom:60px;
@@ -135,59 +135,6 @@ h4 {
   position: absolute;
   z-index: 900;
 }
-
-/*-- 
-.gallery {
-  background-image: url('images/gallery-0-open.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  margin: 10% 0%;
-  height: 100%;
-  bottom: 35%;
-  text-align:center;
-  position:relative;
-}
---*/
-
-/*-- START GALLERY
-.slider {
-	width: 90%;
-	margin: 0 auto;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
-.slide-content {
-	display: grid;
-	grid-template-columns:auto;
-}
-
-.slide-content .text-content {
-  margin-left: 20px;
-}
-
-.slide-content img {
-  width: 95%;
-  border-radius: 10px;
-}
-
-.slick-initialized .slick-slide {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-}
-
-.kitten-slide img {
-  width: 100%;}
-
-.kitten-slide img {
-  width: 100%;
-}
-
-.kitten-slide {
-  margin: 0 0;}
-   --*/
-/*-- END --*/
 
 .pika-img {
   width: 100%;
