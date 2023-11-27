@@ -67,7 +67,25 @@ h5 {
   position:relative;
   margin-top: 0px;
 }
+.yellow-text {
+  color: #774f78;
+}
+.flexbox {
+  padding-top:160px;
+  display:flex;
+  width:100%;
+}
+.flexbox div {
 
+  flex:1;
+}
+.flexbox img {
+  width:80%;
+}
+.flexbox .right {
+  padding-right:80px;
+  text-align:left;
+}
 .frame {
   background-image: url('images/flower-power.JPG');
   background-size: cover;
@@ -96,8 +114,8 @@ h5 {
   overflow:hidden;
 }
 
-.page-01 {
-  background-image: url('images/map.jpg');
+/* .page-01 {
+  background-image: url('');
   background-size: 40%;
   background-repeat: no-repeat;
   width: 100%;
@@ -108,16 +126,9 @@ h5 {
   text-align:center;
   position:relative;
   overflow:hidden;
-}
+} */
 
-.flexbox {
-  position: absolute;
-  width:40%;
-  margin-right: 40px;
-  height:100%;
-  margin-top: 200px;
-  bottom:60px;
-}
+
 
 .page-02 {
   background-image: url('images/pika-collared.jpg');
