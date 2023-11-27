@@ -30,6 +30,7 @@
     position: relative;
     font-weight: 900;
     color: #9b0a0a;
+    z-index: 600;
   }
   
   h2 {
@@ -55,7 +56,7 @@
   }
   
   h3 {
-    font-size:40px;
+    font-size:60px;
     font-family: tilda;
     font-style: normal;
     font-weight: 100;
@@ -119,6 +120,36 @@
     text-align: center;
     position:fixed;
   }
+
+  /*-- Start Page Homepage images--*/
+  
+  .page-one-pic-two {
+    position:absolute;
+    border-radius: 10px;
+    left: -100px;
+    top: 60%;
+    width: 200;
+    transform:rotate(-10deg);
+  }
+
+  .page-one-pic-three {
+    position:absolute;
+    border-radius: 10px;
+    left: 30px;
+    top: -15%;
+    width: 300;
+    transform:rotate(5deg);
+  }
+  
+  .page-one-pic-five {
+    position:absolute;
+    border-radius: 10px;
+    left: 80%;
+    top: -5%;
+    width: 300;
+    transform:rotate(10deg);
+  }
+  /*-- End --*/
 
   /*-- Start Page One Flexboxes --*/
   .border {
