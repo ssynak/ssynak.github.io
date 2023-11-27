@@ -51,14 +51,39 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: -1390px;
-    margin-left: -30px;
-    width: 100%;
+    margin-left: -230px;
+    width: 150%;
     height:100%;
     position:relative;
     overflow:hidden;
     z-index: -100;
   }
 
+  .frame-2 {
+    background-image: url('images/deckled-yellow.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -1190px;
+    margin-left: -230px;
+    width: 150%;
+    height:100%;
+    position:relative;
+    overflow:hidden;
+    z-index: -100;
+  }
+
+  .frame-3 {
+    background-image: url('images/deckled-yellow.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -1090px;
+    margin-left: -230px;
+    width: 150%;
+    height:100%;
+    position:relative;
+    overflow:hidden;
+    z-index: -100;
+  }
 .container {
     position: fixed;
     bottom:20px;
