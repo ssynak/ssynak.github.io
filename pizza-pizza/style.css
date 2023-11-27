@@ -23,6 +23,14 @@
     line-height: normal;
     color: #f9f6f6;
   }
+
+  h1-sub {
+    font-family: HUMANISM;
+    font-size: 60px;
+    position: relative;
+    font-weight: 900;
+    color: #9b0a0a;
+  }
   
   h2 {
     left: 10px;
@@ -162,6 +170,15 @@
     bottom: 50px;
     text-align:left;
     position:relative;
+  }
+
+  .content-1 {
+    width: 90%;
+    height: 60%;
+    margin: 80px auto;
+    border-radius: 10px;
+    background-color:rgba(255,255,255,.6);
+    padding: 90px 30px;
   }
   
   .content {
