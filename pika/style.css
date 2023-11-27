@@ -110,14 +110,14 @@ h5 {
   overflow:hidden;
 }
 
-.flexbox {
+/*--.flexbox {
   position: absolute;
   width:40%;
   margin-right: 40px;
   height:100%;
   margin-top: 200px;
   bottom:60px;
-}
+}--*/
 
 .page-02 {
   background-image: url('images/pika-collared.jpg');
