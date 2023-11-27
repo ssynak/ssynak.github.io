@@ -13,7 +13,7 @@
     align-items:right;
   }
   
-  h1 {
+  h6 {
     position: relative;
     left: 150px;
     font: size 60px;
@@ -23,14 +23,37 @@
     line-height: normal;
     color: #f9f6f6;
   }
+
+  h1 {
+    position: relative;
+    left: 10px;
+    font: size 60px;
+    font-family: HUMANISM;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #f9f6f6;
+  }
   
   h2 {
-    font-size:120px;
-    font-family: tilda;
+    left: 10px;
+    font-size:10px;
+    font-family: HUMANISM;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
     line-height: normal;
-    color: #9b0a0a;
+    color: #faf7f7;
+    position:relative;
+  }
+
+  h2-sub {
+    left: 10px;
+    font-size:15px;
+    font-family: HUMANISM;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #faf7f7;
     position:relative;
   }
   
@@ -47,7 +70,7 @@
   }
   
   h4 {
-    font-size: 10px;
+    font-size: 25px;
     font-family: HUMANISM;
     font-style: normal;
     font-weight: 600;
@@ -58,6 +81,7 @@
   }
 
   h5{
+    font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     align-content: center;
@@ -72,21 +96,75 @@
     width: 100%;
     margin:auto;
     height:100%;
-    margin-top: 115px;
+    margin-top: 130px;
     bottom:60px;
     text-align:center;
     position:relative;
     overflow:hidden;
   }
-  
 
+  .frame-2 {
+    background-image: url('images/checkerboard-bg-1440x1100.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin:auto;
+    height:100%;
+    margin-top: 0px;
+    bottom:0px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+  }
+  
   .header {
-    height: 30px;
     margin-left:20%;
-    padding:0%;
     text-align: center;
     position:fixed;
   }
+
+  /*-- Start Page One Flexboxes --*/
+  .border {
+    border: 1px solid #9b0a0a;
+  }
+  
+  .flexbox {
+    display:flex;
+    width:100%;
+    margin:auto;
+    margin-top:150px;
+    text-align: left;
+  }
+
+  .flexbox-2 {
+    display:flex;
+    width:30%;
+    margin:auto;
+    margin-top:195px;
+    text-align: left;
+  }
+  .flexbox div {
+    flex:1;
+    border-radius: 10px;
+    background-color:rgba(255,255,255,.6);
+  }
+
+  .flexbox div {
+    flex:2;
+    margin: 70px 30px;
+  }
+  
+  .menu-1 {
+    position: relative;
+  }
+
+  .menu-2 {
+    position: relative;
+    margin-top: 7px;
+    width: 100%
+  
+  }
+  /*-- End --*/
   
   .page-02 {
     width: 90%;
@@ -106,13 +184,22 @@
     padding:80px;
   }
 
+  .content-2 {
+    width: 80%;
+    height: 60%;
+    margin: 80px auto;
+    border-radius: 10px;
+    background-color:rgba(255, 255, 255, 0.911);
+    padding:80px;
+  }
+
   /*-- Start Page 3 images--*/
   
   .page-four-pic-two {
     position:absolute;
     border-radius: 10px;
-    left: -320px;
-    top: -60%;
+    left: -150px;
+    top: -40%;
     width: 200;
     transform:rotate(-10deg);
   }
@@ -120,8 +207,8 @@
   .page-four-pic-three {
     position:absolute;
     border-radius: 10px;
-    left: -200px;
-    top: 60%;
+    left: -125px;
+    top: 25%;
     width: 300;
     transform:rotate(5deg);
   }
@@ -129,15 +216,15 @@
     position:absolute;
     border-radius: 10px;
     left: 85%;
-    top: -60%;
+    top: -40%;
     width: 300;
     transform:rotate(5deg);
   }
   .page-four-pic-five {
     position:absolute;
     border-radius: 10px;
-    left: 60%;
-    top: 105%;
+    left: 90%;
+    top: 50%;
     width: 300;
     transform:rotate(-3deg);
   }
